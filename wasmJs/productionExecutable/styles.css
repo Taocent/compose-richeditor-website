@@ -1,9 +1,9 @@
 html, body {
-    width: 100%;
-    height: 100dvh;       /* ✅ 用 dvh 替代 %，更准确反映动态视口 */
+    position: fixed;
+    inset: 0;
     margin: 0;
     padding: 0;
-    overflow: hidden;     /* 保留：防止双滚动条，由 Compose 内部管理滚动 */
-    touch-action: none;   /* ✅ 新增：阻止浏览器默认手势，避免与 Compose 手势冲突 */
-    overscroll-behavior: none; /* ✅ 新增：阻止边缘回弹效果 */
+    overflow: hidden;
+    touch-action: manipulation;
+    overscroll-behavior: none;
 }
